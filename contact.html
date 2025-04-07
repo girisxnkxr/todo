@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Me</title>
+  <style>
+    body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #00bcd4;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 1.1em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 10px;
+  color: #e0e0e0;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #00bcd4;
+  color: #121212;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #4dd0e1;
+}
+
+.social {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.social a {
+  margin: 0 10px;
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.social a:hover {
+  color: #4dd0e1;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Contact <span class="highlight">Me</span></h1>
+      <p class="subtitle">Have a question or want to work together?</p>
+    </header>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+   
+    <div class="social">
+      <p>Or connect with me on:</p>
+      <a href="https://github.com/girisxnkxr" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/girisxnkxr" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</body>
+</html>

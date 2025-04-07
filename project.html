@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <style>
+    /* Base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: #00bcd4;
+}
+
+.subtitle {
+  color: #aaa;
+  font-size: 1.1em;
+}
+
+/* Projects Grid */
+.projects {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Project Card */
+.project-card {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card h2 {
+  margin-bottom: 10px;
+  color: #00bcd4;
+}
+
+.project-card p {
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #121212;
+  background-color: #00bcd4;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.project-card a:hover {
+  background-color: #4dd0e1;
+}
+.btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #00bcd4;
+      color: #121212;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    
+    .btn:hover {
+      background-color: #4dd0e1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><span class="highlight">My Projects</span></h1>
+      <p class="subtitle">A collection of cool things I've built</p>
+    </header>
+
+    <section class="projects">
+      <div class="project-card">
+        <h2>Digital Art Gala</h2>
+        <p>Led a creative team in designing a digital artwork that won 1st place at a 
+            regional Digital Art Gala. Combined design, storytelling, and animation for 
+            a visually striking experience that impressed judges and audience alike.</p>
+            <a href="https://www.linkedin.com/posts/abhishek-j-882967322_aiart-digitalart-anokha2024-activity-7265758447344762880-cB0I?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFNmzGsBHEiKuOo9g3q7k2CoNBggdPmyZcc" class="btn">View Project</a>
+      </div>
+
+      <div class="project-card">
+        <h2>To-Do List</h2>
+        <p>A minimal task management app with add/delete functionality using JavaScript.</p>
+        <a href="todolist.html" class="btn" target="_blank">View Project</a>
+      </div>
+      
+      
+      
+    </section>
+  </div>
+</body>
+</html>
